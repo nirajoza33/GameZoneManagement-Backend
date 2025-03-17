@@ -1,0 +1,6 @@
+@GameZoneManagementApi_HostAddress = http://localhost:5012
+
+GET {{GameZoneManagementApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
