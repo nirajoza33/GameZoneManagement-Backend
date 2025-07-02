@@ -35,6 +35,12 @@ namespace GameZoneManagementApi.Models
         [Column]
         public int RoleId { get; set; }
 
+        [Required]
+        [StringLength(50)]
+        [Column]
+        public string Status { get; set; } = "Active"; // default value can be "Active"
+
+
         [ForeignKey("RoleId")]            
         public Tblroles Tblrole { get; set; }
 

@@ -20,7 +20,15 @@ namespace GameZoneManagementApi.DTOs
 
         public string? Bio { get; set; }
 
+        public string Status { get; set; } = "Active"; // New field
+
         [Required]
         public int RoleId { get; set; }
+
+
+        // if using google captcha then uncoment this field
+
+        //[System.ComponentModel.DataAnnotations.Required(AllowEmptyStrings = true)]
+        //public string CaptchaToken { get; set; }
     }
 }
